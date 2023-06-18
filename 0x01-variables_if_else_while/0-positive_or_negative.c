@@ -1,11 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- * main - Entry Point
- * Return: 0 (Success)
+ *main - Is it a positve, negative or a zero answer
+ *
+ *Return: Always 0 (Success)
  */
-int main(void) - Entry Point
+int main(void)
 {
 	int n;
 
