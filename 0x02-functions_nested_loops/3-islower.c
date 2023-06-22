@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *_islower - lowercase character
- *Description: a function that checks for lowercase character
+ *_islower - function that checks for lowercase character
+ *@c: charater being hecked
  *Return: 1 if c lowercases or 0 for anything else.
  */
 
