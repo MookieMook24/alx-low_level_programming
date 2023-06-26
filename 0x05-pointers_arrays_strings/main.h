@@ -16,4 +16,4 @@ char *_strcpy(char *dest, char *src);
 #ifndef MAIN_H
 #define MAIN_H
 
-#endi
+#endif
