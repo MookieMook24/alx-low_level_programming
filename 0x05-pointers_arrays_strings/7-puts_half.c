@@ -2,7 +2,7 @@
 
 /**
 * puts_half - A function that prints half of a string
-* n = (length_of_the_string - 1) / 2, if odd
+* if odd let, n = (length_of_the_string - 1) / 2
 * @str: input
 * Return: half of input
 */
@@ -11,22 +11,21 @@ void puts_half(char *str)
 
 {
 
-	int x, n, longb;
+	int a, n, longi;
 
-	longb = 0;
+	longi = 0;
 
-	while (x = 0; str[x] != '\0'; x++)
-		longb++;
-		n = (longb / 2);
+	for (a = 0; str[a] != '\0'; a++)
+		longi++;
 
-	if ((longb % 2) == 1)
-		n = ((longb + 1) / 2);
+	n = (longi / 2);
 
-	for (x = n; str[x] != '\0'; x++)
-		_putchar(str[x]);
+	if ((longi % 2) == 1)
+		n = ((longi + 1) / 2);
 
+	for (a = n; str[a] != '\0'; a++)
+		_putchar(str[a]);
 	_putchar('\n');
 
 }
-
 
