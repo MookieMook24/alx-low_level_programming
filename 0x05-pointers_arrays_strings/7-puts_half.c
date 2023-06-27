@@ -15,7 +15,7 @@ void puts_half(char *str)
 
 	longb = 0;
 
-	for (x = 0; str[x] != '\0'; x++)
+	while (x = 0; str[x] != '\0'; x++)
 		longb++;
 		n = (longb / 2);
 
@@ -28,6 +28,5 @@ void puts_half(char *str)
 	_putchar('\n');
 
 }
-
 
 
