@@ -1,28 +1,34 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _memset - fill a block of memory with a specific value
- * @x: Starting address of memory to be filled
- * @y: The desired value
- * @z: Number of bytes to be changed
- * Return: changed array with new value for n bytes
+ * _strcat - concatenates two strings
+ * @dest: input value
+ * @src: input value
+ * Return: void
  */
 
-char *_memset(char *x, char y, unsigned int z)
+char *_strcat(char *dest, char *src)
 
 {
-	int i = 0
+	int x;
+	int y;
 
-	for (; z > 0; i++)
+	x = 0;
 
+	while (dest[x] != '\0')
 	{
-		x[i] = y;
-
-		z--;
-
+		x++;
 	}
 
-	return (x);
+	y = 0;
+
+	while (src[y] != '\0')
+	{
+		dest[x] = src[y];
+		x++;
+		y++;
+	}
+	dest[x] = '\0'
+	return (dest);
 
 }
