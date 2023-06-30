@@ -10,25 +10,18 @@
 char *_strcat(char *dest, char *src)
 
 {
-	int x;
-	int y;
 
-	x = 0;
+	int dlen = 0, j;
 
-	while (dest[x] != '\0')
+	while (dest[dlen])
+		dlen++;
+/* @src: The source string*/
+	for (j = 0; src[j] != 0; j++)
 	{
-		x++;
+		dest[dlen] = src[j];
+		dlen++;
 	}
-
-	y = 0;
-
-	while (src[y] != '\0')
-	{
-		dest[x] = src[y];
-		x++;
-		y++;
-	}
-	dest[x] = '\0'
+/* Return: A pointer to the resulting string dest*/
+	dest[dlen] = '\0';
 	return (dest);
-
 }
